@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/demo
+    username: postgres
+    password: renzo123
+
+application:
+  api:
+    path: '/business/kotlin/v1/employees'
+
+server.port: 8081
